@@ -5,14 +5,18 @@ header{
     height: 60px;
     width: 100%;
     margin: 30px 0;
+    z-index: 10;
 
     .container{
         margin: 0 auto;
         padding: 22px;
         max-width: 1170px;
         height: 100%;
-        background-color: rgb(102, 101, 100);
+        background: linear-gradient(90deg,rgba(255, 255, 255, 0.15) 0%,rgba(0, 0, 0, 0.4) 20%,rgba(0, 0, 0, 0.4) 80%,rgba(255, 255, 255, 0.15) 100%
+        );
+        backdrop-filter: blur(10px);
         border-radius: 30px;
+        border: solid 0.1px rgba(241, 234, 234, 0.445);
     }
 }
 
@@ -21,14 +25,12 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     height: 100%;
-
 
     text-decoration: none;
 
     img{
-        width: 100px;
+        height: 50px;
         object-fit: cover;
     }
 
@@ -38,6 +40,7 @@ header{
         
         text-decoration: none;
         color: black;
+        font-weight: bold;
     }
 
 }
@@ -46,14 +49,15 @@ header{
     display: flex;
     flex-direction: row;
     gap: 25px;
-
+    z-index: 10;
+    
     .internal-scroll{
         color: aliceblue;
     }
 
     .internal-scroll:hover{
         text-decoration: underline;
-        text-underline-offset: 5px;
+        text-underline-offset: 8px;
     }
 
     
@@ -68,9 +72,11 @@ header{
 
     background-color: aliceblue;
 
-    padding: 8px 15px;
+    padding: 5px 15px;
     margin-left: 5px;
     border-radius: 20px;
+
+    transition: all 0.2s;
 
     img{
         object-fit: cover;
@@ -79,4 +85,7 @@ header{
     }
 }
 
+.cta-header:hover{
+    transform: scale(1.05);
+}
 
