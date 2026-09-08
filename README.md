@@ -7,6 +7,7 @@
 - Home: 15%
 - Hero: 60%
 - About: 5%
+- NotFound: 100%
 
 - [Bettel Instagram](https://www.instagram.com/bettelimports/)
 
