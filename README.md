@@ -8,6 +8,7 @@
 - Hero: 60%
 - About: 5%
 - NotFound: 100%
+- SideBar: 60%
 
 - [Bettel Instagram](https://www.instagram.com/bettelimports/)
 
