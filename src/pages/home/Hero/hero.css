@@ -93,11 +93,11 @@
 
 @media (max-width:1040px){
     .container-hero{
-        
+        gap: 60px;
     }
 
     .title-hero{
-        gap: 40px;
+        gap: 30px;
 
         h1,h2{
             font-size: 65px;
