@@ -2,10 +2,10 @@
 
 >> Stats level
 
-- Header: 20%
+- Header: 45%
 - Footer: 10%
-- Home: 10%
-- Hero: 40%
+- Home: 15%
+- Hero: 60%
 - About: 5%
 
 - [Bettel Instagram](https://www.instagram.com/bettelimports/)

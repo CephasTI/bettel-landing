@@ -1,23 +1,22 @@
 header{
     position: fixed;
-    top: 0;
+    top: 30px;
 
     height: 60px;
     width: 100%;
-    margin: 30px 0;
+    
     z-index: 10;
+}
 
-    .container{
-        margin: 0 auto;
-        padding: 22px;
-        max-width: 1170px;
-        height: 100%;
-        background: linear-gradient(90deg,rgba(255, 255, 255, 0.15) 0%,rgba(0, 0, 0, 0.4) 20%,rgba(0, 0, 0, 0.4) 80%,rgba(255, 255, 255, 0.15) 100%
-        );
-        backdrop-filter: blur(10px);
-        border-radius: 30px;
-        border: solid 0.1px rgba(241, 234, 234, 0.445);
-    }
+.navbar-container{
+    margin: 0 24px;
+    padding: 0 22px;
+    
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0.15) 0%,rgba(0, 0, 0, 0.4) 20%,rgba(0, 0, 0, 0.4) 80%,rgba(255, 255, 255, 0.15) 100%
+    );
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: solid 0.1px rgba(241, 234, 234, 0.445);
 }
 
 .bar{
@@ -25,22 +24,22 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
     height: 100%;
+
+    margin: 0 auto;
 
     text-decoration: none;
 
     img{
         height: 50px;
         object-fit: cover;
+        user-select: none;
     }
 
     a{
         display: flex;
         align-items: center;
-        
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
     }
 
 }
@@ -49,13 +48,19 @@ header{
     display: flex;
     flex-direction: row;
     gap: 25px;
+
     z-index: 10;
-    
-    .internal-scroll{
+
+    a{
         color: aliceblue;
+        
+        font-size: 14px;
+        font-weight: bold;
+
+        text-decoration: none;
     }
 
-    .internal-scroll:hover{
+    > a:hover{
         text-decoration: underline;
         text-underline-offset: 8px;
     }
@@ -74,6 +79,7 @@ header{
 
     padding: 5px 15px;
     margin-left: 5px;
+
     border-radius: 20px;
 
     transition: all 0.2s;
@@ -83,9 +89,42 @@ header{
         max-width: 15px;    
         max-height: 15px;
     }
+
+    p{
+        color: black;
+    }
 }
 
 .cta-header:hover{
     transform: scale(1.05);
 }
 
+.menu-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    svg{
+        transition:  transform 0.2s;
+    }
+
+    svg:hover{
+        transform: scale(1.2);
+    }
+}
+
+
+
+@media(max-width:1040px){
+    .menu{
+        display: none;
+    }
+
+
+}
+
+@media(min-width:1041px){
+    .menu-button{
+        display: none;
+    }
+}

@@ -11,3 +11,9 @@
 html{
     background-color: black;
 }
+
+.container{
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
