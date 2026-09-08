@@ -1,5 +1,4 @@
 .background-dark{
-    display: none;
     position: fixed;
 
     top: 0;
@@ -8,21 +7,26 @@
     height: 100%;
     width: 100%;
 
+    background-color: black;
+    opacity: 0.9;
+
     z-index: 11;
 
-    transition: all 2s;
+    transform: translateY(-100%);
+
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .background-dark.on{
-    display: flex;
-    background-color: black;
-    opacity: 0.9;
+    transform: translateX(0);
 }
 
 .menu-sidebar{
     display: flex;
     flex-direction: column;
     position: fixed;
+
+    filter: blur(3px);
 
     top: 0;
     right: 0;
@@ -45,6 +49,7 @@
 }
 
 .menu-sidebar.open{
+    filter: none;
     transform: translateX(0);   
 }
 
