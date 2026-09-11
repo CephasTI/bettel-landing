@@ -18,8 +18,8 @@ function Sidebar({ opennedMenu, closedMenu }){
 
                 <div className="sidebar-margin">
                     <div className="main-sidebar">
-                        <a href="#hero-section" onClick={closedMenu}>Inicio</a>
-                        <a href="#about-section" onClick={closedMenu}>Historia</a>
+                        <a href="#hero" onClick={closedMenu}>Inicio</a>
+                        <a href="#about" onClick={closedMenu}>Historia</a>
                         <a href="#products" onClick={closedMenu}>Produtos</a>
                         <a href="#warranty" onClick={closedMenu}>Garantia</a> 
                         <a href="#questions" onClick={closedMenu}>FAQ</a>   
@@ -27,7 +27,7 @@ function Sidebar({ opennedMenu, closedMenu }){
                         <a href="#contacts" onClick={closedMenu}>Contato</a>  
                     </div>
 
-                    <a className="bottom-sidebar" target="_blank" href="https://wa.me/5511947361263?text=Olá%21%20Vim%20pelo%20site%20da%20Betel%20e%20gostaria%20de%20fazer%20uma%20encomenda.%20Poderia%20me%20ajudar%20com%20mais%20informações%3F">
+                    <a className="bottom-sidebar" target="_blank" href="https://wa.me/5511947361263?text=Olá%21%20Vim%20pelo%20site%20da%20Bettel%20e%20gostaria%20de%20fazer%20uma%20encomenda.%20Poderia%20me%20ajudar%20com%20mais%20informações%3F">
                         <img src={WhatsappWhiteImage}/>
 
                         <p>

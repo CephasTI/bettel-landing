@@ -19,5 +19,6 @@ html{
 }
 
 section{
-    background-color: aliceblue;
+    height: 100vh;
+    width: 100%;
 }

@@ -23,10 +23,10 @@ function Header(){
                 <div className="container">
                     <div className="navbar-container">
                         <nav className="bar">
-                            <a href="#hero-section"> <img src={logo} alt="Logo Battel Imports" /></a>
+                            <a href="#hero"> <img src={logo} alt="Logo Battel Imports" /></a>
 
                             <div className="menu">
-                                <a href="#about-section">Historia</a>
+                                <a href="#about">Historia</a>
                                 <a href="#products">Produtos</a>
                                 <a href="#warranty">Garantia</a> 
                                 <a href="#questions">FAQ</a>   
