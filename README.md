@@ -1,21 +1,63 @@
 # Bettel Imports - Landing
 
->> Stats level
+The Bettel Imports landing page is a site showcasing Apple products, designed to capture leads from new customers and increase sales volume.
+---
 
-- Header: 45%
-- Footer: 10%
-- Home: 15%
-- Hero: 60%
-- About: 5%
-- NotFound: 100%
-- SideBar: 60%
+## Project status
 
-- [Bettel Instagram](https://www.instagram.com/bettelimports/)
+>> 🟡 In Development
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Progress
 
-## Expanding the ESLint configuration
+### Components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Component | Progress |
+| Header | 80% |
+| Sidebar | 85% |
+| Footer | 10% |
+| Notfound | 100% | 
+
+### Pages
+
+| Page | Progress | 
+| Hero | 75% |
+| About | 100% | 
+| Products | 5% | 
+| Garantee | 5% |
+| FAQ | 0% |
+| Feedback | 0% |
+| Contact | 0% |
+
+### Responsivity
+
+| Device | Progress | 
+| Desktop | 65% |
+| Tablet | 25% |
+| Mobile | 60% |
+
+---
+
+## Layout
+
+### Desktop
+![Hero](./public/./desktop-layout-hero.png)
+![About](./public/./desktop-layout-about.png)
+
+
+### Mobile
+![Hero](./public/./mobile-layout-hero.png)
+![About](./public/mobile-layout-about.png)
+![Sidebar](./public/mobile-layout-sidebar.png)
+---
+
+### Author
+
+- Pedro Rodrigues de Oliveira
+- (Linkedin) [https://www.linkedin.com/in/pedro-rodrigues-de-oliveira-a925533b8/]
+- (Instagram) [https://www.instagram.com/eu_cephas/]
+
+### Owner
+
+- [Bettel Imports Instagram](https://www.instagram.com/bettelimports/)
