@@ -1,3 +1,7 @@
+.background-aliceblue-color{
+    background-color: aliceblue;
+}
+
 .notfound-container{
     display: flex;
     flex-direction: column;

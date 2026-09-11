@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function NotFound(){
     return(
-        <section>
+        <section className="background-aliceblue-color">
             <div className="container">
                 <div className="notfound-container">
                     <div className="notfound">
