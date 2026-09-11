@@ -60,12 +60,10 @@ header{
         text-decoration: none;
     }
 
-    > a:hover{
+    .nav-ref:hover{
         text-decoration: underline;
         text-underline-offset: 8px;
     }
-
-    
 }
 
 .cta-header{

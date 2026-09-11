@@ -1,3 +1,7 @@
+#about{
+    min-height: 800px;
+}
+
 .background-gradient-black-to-silver{
     background: linear-gradient(180deg, 
     rgb(0, 0, 0) 20%, 
@@ -30,7 +34,6 @@
     justify-content: center;
     align-items: center;
     
-    height: 600px;
     width: 450px;
 
     img{
@@ -99,7 +102,7 @@
 }
 
 .history-container{
-    width: 400px;
+    width: 500px;
 
     opacity: 0;
 

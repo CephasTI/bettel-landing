@@ -51,7 +51,7 @@
 
                             <div className={`history-container ${ showHistory ? "show" : ""}`} ref={historyRef}>
                                 <h3>
-                                    NOSSA HOSTÓRIA
+                                    NOSSA HISTÓRIA
                                 </h3>
 
                                 <h1>Como nasceu a Bettel</h1>
