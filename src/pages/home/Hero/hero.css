@@ -88,6 +88,9 @@
 }
 
 @media (max-width:1040px){
+    #hero{
+        margin-bottom: 100px;
+    }
     .container-hero{
         gap: 60px;
     }

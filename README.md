@@ -23,7 +23,7 @@ The Bettel Imports landing page is a site showcasing Apple products, designed to
 
 | Page | Progress | 
 | Hero | 75% |
-| About | 100% | 
+| About | 85% | 
 | Products | 5% | 
 | Garantee | 5% |
 | FAQ | 0% |
