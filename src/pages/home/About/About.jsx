@@ -48,8 +48,8 @@
                     <div className="container">
                         <div className="container-about">
                             <div className="image-container" ref={imageRef}>
-                                <img className={`back-image ${ showTernaryOperatorImage }`}  src={backImage} alt=""/>
-                                <img className={`front-image ${ showTernaryOperatorImage }`} src={frontImage} alt="" />
+                                <img className={`back-image ${ showTernaryOperatorImage }`}  src={backImage} alt="Iphone 17 PRO MAX"/>
+                                <img className={`front-image ${ showTernaryOperatorImage }`} src={frontImage} alt="Criadora da Bettel" />
                             </div>
 
                             <div className="history-container"  ref={historyRef}>
