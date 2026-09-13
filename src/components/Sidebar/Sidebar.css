@@ -63,7 +63,7 @@
     justify-content: space-between;
     align-items: center;
 
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     img{
         object-fit: cover;
@@ -95,10 +95,14 @@
     >a{
         font-size: 18px;
         font-weight: bold;
-        
-        background-color: none;
+
+        margin-right: 5px;
+
         color: aliceblue;
+        background-color: none;
+        
         text-decoration: none;
+
         transition: all 0.2s;
     }
 

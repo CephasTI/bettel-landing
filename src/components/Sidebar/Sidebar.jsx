@@ -12,18 +12,20 @@ function Sidebar({ opennedMenu, closedMenu }){
                     <div onClick={closedMenu}>
                         <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
                     </div>
- 
-                    <img src={BettelWhiteLogo} alt="Logo Bettel" />
+
+                    <a href="#hero" onClick={closedMenu}>
+                        <img src={BettelWhiteLogo} alt="Logo Bettel" />
+                    </a>
                 </div>
 
                 <div className="sidebar-margin">
                     <div className="main-sidebar">
-                        <a href="#hero" onClick={closedMenu}>Inicio</a>
+                        <a href="#hero" onClick={closedMenu}></a>
                         <a href="#about" onClick={closedMenu}>Historia</a>
-                        <a href="#products" onClick={closedMenu}>Produtos</a>
-                        <a href="#warranty" onClick={closedMenu}>Garantia</a> 
-                        <a href="#questions" onClick={closedMenu}>FAQ</a>   
+                        {/* <a href="#products" onClick={closedMenu}>Produtos</a> */}
+                        <a href="#differential" onClick={closedMenu}>Diferenciais</a>  
                         <a href="#feedback" onClick={closedMenu}>Feedback</a>
+                        <a href="#faq" onClick={closedMenu}>FAQ</a>  
                         <a href="#contacts" onClick={closedMenu}>Contato</a>  
                     </div>
 
