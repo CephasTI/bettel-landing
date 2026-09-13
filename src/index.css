@@ -12,14 +12,14 @@ html{
     background-color: black;
 }
 
+section{
+    height: 100dvh;
+    min-height: 100dvh;
+    width: 100%;
+}
+
 .container{
     max-width: 1170px;
     height: 100%;
     margin: 0 auto;
-}
-
-section{
-    height: 100dvh;
-    min-height: 896px;
-    width: 100%;
 }

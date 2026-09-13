@@ -3,6 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Products from "./Products/Products";
+import Differential from "./Differential/Differential";
 
 function Home(){
     return(
@@ -11,7 +12,8 @@ function Home(){
 
             <Hero/>
             <About/>
-            <Products/>
+            {/* <Products/> */}
+            <Differential/>
 
             <Footer/>
         </div>

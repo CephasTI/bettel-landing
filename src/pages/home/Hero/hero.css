@@ -13,7 +13,7 @@
 }
 
 
-.container-hero{
+.hero-container{
     position: relative;
     
     display: flex;
@@ -28,7 +28,7 @@
     z-index: 2;
 }
 
-.title-hero{
+.hero-title{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -45,7 +45,7 @@
     }
 }
 
-.button-hero{
+.hero-button{
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -76,11 +76,11 @@
         transform: scale(1.05);
     }
 
-    .about-hero{
+    .hero-abouthero{
         transition: all 0.2s;
     }
     
-    .about-hero:hover{
+    .hero-about:hover{
         background: none;
         color: aliceblue;
         transform: scale(1.05);
@@ -91,11 +91,11 @@
     #hero{
         margin-bottom: 100px;
     }
-    .container-hero{
+    .hero-container{
         gap: 60px;
     }
 
-    .title-hero{
+    .hero-title{
         gap: 30px;
 
         h1,h2{
@@ -115,7 +115,7 @@
         }
     }
 
-    .button-hero{
+    .hero-button{
         flex-direction: column;
         gap: 20px;
 
