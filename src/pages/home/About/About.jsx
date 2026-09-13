@@ -12,42 +12,42 @@
             
             useEffect(() => {
 
-            const myObserver = new IntersectionObserver((entries) => {
+                const myObserver = new IntersectionObserver((entries) => {
 
-                entries.forEach((entry) => {
+                    entries.forEach((entry) => {
 
-                    if (entry.target === imageRef.current) {
-                        setShowImage(entry.isIntersecting);
-                    }
+                        if (entry.target === imageRef.current) {
+                            setShowImage(entry.isIntersecting);
+                        }
 
-                    if (entry.target === historyRef.current) {
-                        setShowHistory(entry.isIntersecting);
-                    }
+                        if (entry.target === historyRef.current) {
+                            setShowHistory(entry.isIntersecting);
+                        }
+
+                    });
 
                 });
 
-            });
+                const imageAppear = imageRef.current;
+                const historyAppear = historyRef.current;
 
-            const imageAppear = imageRef.current;
-            const historyAppear = historyRef.current;
+                myObserver.observe(imageAppear);
+                myObserver.observe(historyAppear);
 
-            myObserver.observe(imageAppear);
-            myObserver.observe(historyAppear);
+                return () => {
+                    myObserver.disconnect();
+                };
 
-            return () => {
-                myObserver.disconnect();
-            };
-
-        }, []); 
+            }, []); 
 
             const showTernaryOperatorImage = showImage ? "show" : "" ;
             const showTernaryOperatorHistory = showHistory ? "show" : "" ;
 
             return(
-                <section id="about" className="background-gradient-black-to-silver">
+                <section id="about">
                     <div className="container">
                         <div className="container-about">
-                            <div className="image-container" ref={imageRef}>
+                            <div className="image-container defaul-height-width" ref={imageRef}>
                                 <img className={`back-image ${ showTernaryOperatorImage }`}  src={backImage} alt="Iphone 17 PRO MAX"/>
                                 <img className={`front-image ${ showTernaryOperatorImage }`} src={frontImage} alt="Criadora da Bettel" />
                             </div>
