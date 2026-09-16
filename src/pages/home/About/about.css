@@ -1,6 +1,4 @@
 #about{
-    min-height: 800px;
-
     background: linear-gradient(180deg, 
     rgb(0, 0, 0) 20%, 
     rgb(59, 59, 59) 70%, 
@@ -124,9 +122,16 @@
 
         font-size: 13px;
 
-        margin-bottom: 20px;
+        margin-bottom: 5px;
+        width: 125px;
 
-        color: rgb(170, 170, 170);
+        background: linear-gradient(325deg, 
+        rgb(197, 133, 38) 0%,
+        white 50%);
+
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
 
         transform: translateY(100%);
         transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -138,8 +143,15 @@
         font-size: 40px;
 
         margin-bottom: 20px;
+    
+        background: linear-gradient(175deg, 
+        rgb(226, 137, 2) 15%,
+        white 50%);
 
-        color: rgb(253, 253, 253);
+        background-clip: text;
+        -webkit-background-clip: text;
+
+        color: transparent;
 
         transform: translateY(100%);
         transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -210,8 +222,6 @@
             font-size: 14px;
 
             margin-bottom: 20px;
-
-            color: rgb(170, 170, 170);
         }
 
         h1{
@@ -233,6 +243,8 @@
 
 @media (max-width: 780px){
     #about{
+        min-height: 800px;
+        
         background-image: url("../../../assets/background/about-background-image-760x1080.png");
     }
 }

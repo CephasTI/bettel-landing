@@ -11,7 +11,7 @@ function Hero(){
                     <div className="hero-title">
                         <div>
                             <h1>Seu próximo</h1>
-                            <h2>Apple está aqui.</h2>
+                            <h1>Apple está aqui.</h1>
                         </div>
                         <h3>Técnologia, segurança e a melhor experiência Apple com entrega garantida em todo Brasil.</h3>
                     </div>

@@ -33,11 +33,20 @@
     flex-direction: column;
     gap: 20px;
     
-    h1,h2{
+    h1{
         font-size: 90px;
         line-height: 90px;
+        
+        padding-bottom: 10px;
 
-        color: aliceblue;
+        background: linear-gradient(173deg, 
+        rgb(136, 135, 135) 20%,
+        white 40%);
+
+        background-clip: text;
+        -webkit-background-clip: text;
+        
+        color: transparent;
     }
     h3{
         font-size: 20px;
@@ -76,7 +85,7 @@
         transform: scale(1.05);
     }
 
-    .hero-abouthero{
+    .hero-about{
         transition: all 0.2s;
     }
     
@@ -101,8 +110,6 @@
         h1,h2{
             font-size: 50px;
             line-height: 50px;
-
-            color: aliceblue;
         }
 
         h2{
