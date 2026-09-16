@@ -101,15 +101,15 @@
         margin-bottom: 100px;
     }
     .hero-container{
-        gap: 60px;
+        gap: 80px;
     }
 
     .hero-title{
-        gap: 30px;
+        gap: 20px;
 
-        h1,h2{
-            font-size: 50px;
-            line-height: 50px;
+        h1{
+            font-size: 45px;
+            line-height: 35px;
         }
 
         h2{
