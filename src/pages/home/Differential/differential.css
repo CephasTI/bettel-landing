@@ -1,18 +1,18 @@
 #differential{
     min-height: 900px;
-    background:
-    radial-gradient(
-        circle at bottom left,
-        #68d33754,
-        transparent 45%
-    ),
-    radial-gradient(
-        circle at bottom right,
-        #68d33754,
-        transparent 45%
-    ),
-    #454444a3;
+
+    background-image: url('../../../assets/background/differential-background-image-1920x1080.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    object-fit: cover;
+    object-position: center;
+
     overflow: hidden;
+
+    --differential-li-border-radius: 10px;
+    --differential-emphasis-green: #13ff33;
 }
 
 .differential-container{
@@ -37,16 +37,22 @@
 
         text-align: center;
 
+        .eyebrow{
+            border-color: #0179115d;
+            box-shadow: var(--eyebrow-box-shadow) #0179115d;
+            color: #01791181;
+        }
+
         h1{
             font-size: 36px;
             font-weight: bold;
             opacity: 0;
 
             background: linear-gradient(65deg, 
-            rgb(32, 207, 16) 0%,
-            white 40%,
+            rgb(11, 110, 2) 0%,
             white 60%,
-            rgb(32, 207, 16) 100%);
+            white 60%,
+            rgb(11, 110, 2) 100%);
 
             background-clip: text;
             -webkit-background-clip: text;
@@ -56,8 +62,8 @@
             color: transparent;
         }
 
-        p{
-            font-size: 18px;
+        >p{
+            font-size: 16px;
             opacity: 0;
 
             transform: translateY(200%);
@@ -100,14 +106,14 @@
                 padding: 20px 18px;
 
                 border: solid 1px rgba(228, 231, 227, 0.349);
-                border-radius: 10px;
+                border-radius: var(--differential-li-border-radius);
                 box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.516);
 
                 background: linear-gradient(45deg, 
-                rgba(24, 22, 22, 0.664) 15%,
-                rgba(102, 101, 101, 0.747) 40%,
-                rgba(222, 222, 222, 0.432) 80%,
-                rgb(37, 36, 36) 100%
+                rgba(24, 22, 22, 0.37) 15%,
+                rgba(102, 101, 101, 0.418) 40%,
+                rgba(222, 222, 222, 0.199) 80%,
+                rgba(37, 36, 36, 0.384) 100%
                 );
 
                 filter: blur(10px);
@@ -142,7 +148,7 @@
                 }
 
                 &.green-border{
-                    border: solid 1px #13ff33;
+                    border: solid 1px #039216;
                 }
 
                 .more-differential-tag{
@@ -157,10 +163,10 @@
                     letter-spacing: 1px;
 
                     color: rgb(79, 80, 80);
-                    background-color: #13ff33;
-                    box-shadow: 0px 0px 20px 2px #13ff33 ;
+                    background-color: #01c91c;
+                    box-shadow: 0px 0px 20px 2px var(--differential-emphasis-green);
                     
-                    border-radius: 0 10px 0 10px;
+                    border-radius: 0 var(--differential-li-border-radius) 0 var(--differential-li-border-radius);
                     
                 }
                 
@@ -171,7 +177,7 @@
 
                     padding: 10px;
 
-                    border-radius: 16px;
+                    border-radius: 30px;
 
                     background-color: rgba(60, 201, 0, 0.199);
 
@@ -223,11 +229,18 @@
     }
 }
 
-@media(max-width: 1040px){
-    
+@media(max-width: 1240px){
+    #differential{
+        background-image: url('../../../assets/background/differential-background-image-1240x1080.png');
+    }
 }
 
-@media(max-width: 730px){
+@media(max-width: 760px){
+
+    #differential{
+        background-image: url('../../../assets/background/differential-background-image-760x1080.png');
+    }
+
     .differential-container{
 
         .differential-title{
@@ -274,8 +287,8 @@
                         letter-spacing: 1px;
 
                         color: rgb(62, 63, 63);
-                        background-color: #13ff33;
-                        box-shadow: 0px 0px 20px 2px #13ff33;
+                        background-color: var(--differential-emphasis-green);
+                        box-shadow: 0px 0px 20px 2px var(--differential-emphasis-green);
                         
                         border-radius: 0 10px 0 10px;
                         

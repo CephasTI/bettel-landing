@@ -1,4 +1,8 @@
 #products{
+    height: 100%;
+    
+    margin: 0 24px;
+
     background-color: rgb(100, 100, 100);
 }
 
