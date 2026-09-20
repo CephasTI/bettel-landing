@@ -1,4 +1,6 @@
 #feedback{
+    min-height: 900px;  
+
     background-image: url('../../../assets/background/feedback-background-image-1920x1080.png');
     background-position: center;
     background-repeat: no-repeat;
