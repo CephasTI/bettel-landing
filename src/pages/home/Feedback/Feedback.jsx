@@ -66,7 +66,6 @@ function Feedback(){
                         }}
                         loop={true}
                         slidesPerView={slidePerView}
-                        spaceBetween={20}
                         
                         >
                             
