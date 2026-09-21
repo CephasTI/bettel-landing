@@ -20,12 +20,11 @@ function Sidebar({ opennedMenu, closedMenu }){
 
                 <div className="sidebar-margin">
                     <div className="main-sidebar">
-                        <a href="#hero" onClick={closedMenu}></a>
-                        <a href="#about" onClick={closedMenu}>Historia</a>
+                        <a href="#about" onClick={closedMenu}>Sobre nós</a>
                         {/* <a href="#products" onClick={closedMenu}>Produtos</a> */}
-                        <a href="#differential" onClick={closedMenu}>Diferenciais</a>  
+                        <a href="#differential" onClick={closedMenu}>Diferencial</a>  
                         <a href="#feedback" onClick={closedMenu}>Feedback</a>
-                        <a href="#faq" onClick={closedMenu}>FAQ</a>  
+                        <a href="#faq" onClick={closedMenu}>Perguntas</a>  
                         <a href="#contacts" onClick={closedMenu}>Contato</a>  
                     </div>
 

@@ -36,8 +36,6 @@ function Differential(){
             <div className="container">
                 <div className="differential-container">
 
-                    
-
                     <div className="differential-title" ref={titleRef}>
                         <div className="eyebrow">
                             NOSSOS DIFERENCIAIS

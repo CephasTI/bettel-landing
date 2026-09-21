@@ -47,7 +47,7 @@ function Feedback(){
                     <div className="feedback-title-container">
 
                         <div className="eyebrow">
-                            FEEDBACKS
+                            NOSSOS FEEDBACKS
                         </div>
 
                         <h1>
