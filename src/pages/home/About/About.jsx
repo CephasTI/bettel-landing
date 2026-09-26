@@ -5,23 +5,27 @@
         import { useState, useEffect, useRef } from "react";
 
         function About(){
-            const [showImage, setShowImage] = useState(false);
-            const [showHistory, setShowHistory] = useState(false);
+            const [ showImage, setShowImage ] = useState(false);
+            const [ showHistory, setShowHistory ] = useState(false);
             const imageRef = useRef(null);
             const historyRef = useRef(null);
             
             useEffect(() => {
 
-                const myObserver = new IntersectionObserver((entries) => {
+                const myObserver = new IntersectionObserver( (entries) => {
 
                     entries.forEach((entry) => {
 
                         if (entry.target === imageRef.current) {
-                            setShowImage(entry.isIntersecting);
+                            if(entry.isIntersecting === true) {
+                                setShowImage(true);
+                            }
                         }
 
                         if (entry.target === historyRef.current) {
-                            setShowHistory(entry.isIntersecting);
+                            if(entry.isIntersecting === true) {
+                                setShowHistory(true);
+                            }
                         }
 
                     });

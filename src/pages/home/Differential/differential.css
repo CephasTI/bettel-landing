@@ -55,8 +55,10 @@
             background-clip: text;
             -webkit-background-clip: text;
 
-            transform: translateY(200%);
-            transition: all 1s linear;
+            transform: translateY(40px);
+            transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+            transition-delay: 400ms;
+
             color: transparent;
         }
 
@@ -66,9 +68,9 @@
 
             margin: 0 24px;
 
-            transform: translateY(200%);
-            transition: all 1s linear;
-            transition-delay: 200ms;
+            transform: translateY(40px);
+            transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+            transition-delay: 600ms;
 
             color: aliceblue;
         }
@@ -123,22 +125,22 @@
 
                 &.differentials-contract{
                     transform: translateX(100%);
-                    transition-delay: 400ms;
+                    transition-delay: 500ms;
                 }
 
                 &.differentials-product{
                     transform: translateX(-100%);
-                    transition-delay: 750ms;
+                    transition-delay: 850ms;
                 }
                 
                 &.differentials-unboxing{
                     transform: translateX(100%);
-                    transition-delay: 1100ms;
+                    transition-delay: 1200ms;
                 }
 
                 &.differentials-service{
                     transform: translateX(-100%);
-                    transition-delay: 1450ms;
+                    transition-delay: 1550ms;
                 }
 
                 &.showLi{

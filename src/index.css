@@ -15,8 +15,8 @@ html{
 }
 
 section{
-    height: 100dvh;
-    min-height: 100dvh;
+    height: 100svh;
+    min-height: 100svh;
     width: 100%;
 }
 
@@ -41,4 +41,12 @@ section{
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 2px;
+    /* 
+    .eyebrow{
+        border-color: rgba(168, 168, 168, 0.623);
+        box-shadow: var(--eyebrow-box-shadow) rgba(168, 168, 168, 0.623);
+        color: rgba(168, 168, 168, 0.623);
+    }
+     */
 }
+

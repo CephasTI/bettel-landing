@@ -5,21 +5,25 @@ function Differential(){
     const titleRef = useRef(null);
     const liRef = useRef(null);
 
-    const [showTitle, setShowTitle] = useState(false);
-    const [showLi, setShowLi] = useState(false);
+    const [ showTitle, setShowTitle ] = useState(false);
+    const [ showLi, setShowLi ] = useState(false);
 
     useEffect(()=>{
 
-        const myObserver = new IntersectionObserver((entries)=>{
+        const myObserver = new IntersectionObserver( (entries) => {
 
             entries.forEach( (entry) => {
 
                 if(entry.target === titleRef.current){
-                    setShowTitle(entry.isIntersecting);
+                    if(entry.isIntersecting === true) {
+                        setShowTitle(true);
+                    };
                 }
 
                 if(entry.target === liRef.current){
-                    setShowLi(entry.isIntersecting);
+                    if(entry.isIntersecting === true) {
+                        setShowLi(true);
+                    };
                 }
 
             })
@@ -28,6 +32,10 @@ function Differential(){
 
         myObserver.observe(titleRef.current);
         myObserver.observe(liRef.current);
+
+        return () => {
+            myObserver.disconnect();
+        };
 
     }, [])
 

@@ -5,6 +5,7 @@ import About from "./About/About";
 import Products from "./Products/Products";
 import Differential from "./Differential/Differential";
 import Feedback from "./Feedback/Feedback";
+import Faq from "./Faq/Faq";
 
 function Home(){
     return(
@@ -16,6 +17,7 @@ function Home(){
             {/* <Products/> */}
             <Differential/>
             <Feedback/>
+            <Faq/>
 
             <Footer/>
         </div>

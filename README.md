@@ -23,28 +23,19 @@ The project is being developed with a focus on **responsive design, reusable Rea
 | Footer    |      10% |
 | NotFound  |     100% |
 
+=======
+
 ### Pages
 
-<<<<<<< HEAD
-| Page | Progress | 
-| Hero | 75% |
-| About | 85% | 
-| Products | 5% | 
-| Garantee | 5% |
-| FAQ | 0% |
-| Feedback | 0% |
-| Contact | 0% |
-=======
-| Page      | Progress |
-| --------- | -------: |
-| Hero      |      75% |
-| About     |     100% |
-| Products  |       5% |
-| Guarantee |       5% |
-| FAQ       |       0% |
-| Feedback  |       0% |
-| Contact   |       0% |
->>>>>>> 14bf44e1262362c299559d4991b6c2dd6334f80a
+| Page       | Progress |
+| ---------  | -------: |
+| Hero       |     100% |
+| About      |     100% |
+| Products   |       5% |
+| Difference |       5% |
+| Feedback   |      95% |
+| FAQ        |      90% |
+| Contact    |       0% |
 
 ### Responsiveness
 
