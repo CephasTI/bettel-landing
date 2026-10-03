@@ -1,5 +1,5 @@
 import "./faq.css";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 function Faq() {
     const [ quest1, setQuest1 ] = useState(false);
@@ -9,26 +9,62 @@ function Faq() {
     const [ quest5, setQuest5 ] = useState(false);
     const [ quest6, setQuest6 ] = useState(false);
 
+    const titleRef = useRef(null);
+    const acordionRef = useRef(null);
+    const [ showTitleRef, setShowTitleRef ] = useState(false);
+    const [ showAcordionRef, setShowAcordionRef ] = useState(false);
+
+    useEffect( () => {
+
+        const myObserver = new IntersectionObserver( (entries) => {
+
+            entries.forEach( (entry) => {
+
+                if(entry.target === titleRef.current){
+                    if(entry.isIntersecting === true){
+                        setShowTitleRef(true);
+                    }
+                }
+
+                if(entry.target === acordionRef.current){
+                    if(entry.isIntersecting === true){
+                        setShowAcordionRef(true);
+                    }
+                }
+
+            } )
+
+        })
+
+        myObserver.observe(titleRef.current);
+        myObserver.observe(acordionRef.current);
+
+        return () => {
+            myObserver.disconnect();
+        }
+
+    }, [] )
+
     return(
         <section id="faq">
             <div className="container">
                 <div className="faq-container">
 
-                    <div className="faq-title">
+                    <div className="faq-title" ref={titleRef}>
 
                         <div className="eyebrow">
                             PERGUNTAS FREQUENTES
                         </div>
 
-                        <h1>Sua dúvida. Nossa resposta.</h1>
+                        <h1 className={ showTitleRef ? "show" : "" }>Sua dúvida. Nossa resposta.</h1>
 
-                        <p>
+                        <p className={ showTitleRef ? "show" : "" }>
                             Tudo explicado de forma simples para você fazer sua escolha com segurança.
                         </p>
 
                     </div>
 
-                    <div className="accordion" onClick={ () => { 
+                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} ref={acordionRef} style={{ "--delay": "800ms" }} onClick={ () => { 
                         setQuest1(!quest1);
                         setQuest2(false);
                         setQuest3(false);
@@ -51,7 +87,7 @@ function Faq() {
                         
                     </div>
 
-                    <div className="accordion" onClick={ () => { 
+                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} ref={acordionRef} style={{ "--delay": "950ms" }}onClick={ () => { 
                         setQuest1(false);
                         setQuest2(!quest2);
                         setQuest3(false);
@@ -73,7 +109,7 @@ function Faq() {
                         
                     </div>
 
-                    <div className="accordion" onClick={ () => { 
+                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} ref={acordionRef} style={{ "--delay": "1100ms" }}onClick={ () => { 
                         setQuest1(false);
                         setQuest2(false);
                         setQuest3(!quest3);
@@ -95,7 +131,7 @@ function Faq() {
                         
                     </div>
 
-                    <div className="accordion" onClick={ () => { 
+                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} ref={acordionRef} style={{ "--delay": "1250ms" }}onClick={ () => { 
                         setQuest1(false);
                         setQuest2(false);
                         setQuest3(false);
@@ -117,7 +153,7 @@ function Faq() {
                         
                     </div>
 
-                    <div className="accordion" onClick={ () => { 
+                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} ref={acordionRef} style={{ "--delay": "1400ms" }}onClick={ () => { 
                         setQuest1(false);
                         setQuest2(false);
                         setQuest3(false);
@@ -139,7 +175,7 @@ function Faq() {
                         
                     </div>
 
-                    <div className="accordion" onClick={ () => { 
+                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} ref={acordionRef} style={{ "--delay": "1550ms" }}onClick={ () => { 
                         setQuest1(false);
                         setQuest2(false);
                         setQuest3(false);

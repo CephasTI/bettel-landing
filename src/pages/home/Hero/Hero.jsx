@@ -4,7 +4,13 @@ import video from "../../../assets/background/background-video.mp4";
 function Hero(){
     return(
         <section id="hero">
-            <video className="background-video" autoPlay muted loop playsInline src={video}/>
+            <video className="background-video" 
+            autoPlay 
+            muted 
+            loop 
+            playsInline 
+            preload="auto" 
+            src={video}/>
 
             <div className="container">
                 <div className="hero-container">
