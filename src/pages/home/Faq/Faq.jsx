@@ -87,7 +87,7 @@ function Faq() {
                         
                     </div>
 
-                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} ref={acordionRef} style={{ "--delay": "950ms" }}onClick={ () => { 
+                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} style={{ "--delay": "950ms" }}onClick={ () => { 
                         setQuest1(false);
                         setQuest2(!quest2);
                         setQuest3(false);
@@ -109,7 +109,7 @@ function Faq() {
                         
                     </div>
 
-                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} ref={acordionRef} style={{ "--delay": "1100ms" }}onClick={ () => { 
+                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} style={{ "--delay": "1100ms" }}onClick={ () => { 
                         setQuest1(false);
                         setQuest2(false);
                         setQuest3(!quest3);
@@ -131,7 +131,7 @@ function Faq() {
                         
                     </div>
 
-                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} ref={acordionRef} style={{ "--delay": "1250ms" }}onClick={ () => { 
+                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} style={{ "--delay": "1250ms" }}onClick={ () => { 
                         setQuest1(false);
                         setQuest2(false);
                         setQuest3(false);
@@ -153,7 +153,7 @@ function Faq() {
                         
                     </div>
 
-                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} ref={acordionRef} style={{ "--delay": "1400ms" }}onClick={ () => { 
+                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} style={{ "--delay": "1400ms" }}onClick={ () => { 
                         setQuest1(false);
                         setQuest2(false);
                         setQuest3(false);
@@ -175,7 +175,7 @@ function Faq() {
                         
                     </div>
 
-                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} ref={acordionRef} style={{ "--delay": "1550ms" }}onClick={ () => { 
+                    <div className={`accordion ${ showAcordionRef ? "show" : "" }`} style={{ "--delay": "1550ms" }}onClick={ () => { 
                         setQuest1(false);
                         setQuest2(false);
                         setQuest3(false);
