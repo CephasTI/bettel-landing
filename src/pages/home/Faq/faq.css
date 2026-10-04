@@ -1,4 +1,6 @@
 #faq{
+    min-height: 900px;
+    
     background:
     radial-gradient(
       ellipse 100% 70% at 50% 110%,
