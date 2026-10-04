@@ -25,7 +25,7 @@ function Sidebar({ opennedMenu, closedMenu }){
                         <a href="#differential" onClick={closedMenu}>Diferencial</a>  
                         <a href="#feedback" onClick={closedMenu}>Feedback</a>
                         <a href="#faq" onClick={closedMenu}>Perguntas</a>  
-                        <a href="#contacts" onClick={closedMenu}>Contato</a>  
+                        <a href="#contact" onClick={closedMenu}>Contato</a>  
                     </div>
 
                     <a className="bottom-sidebar" target="_blank" href="https://wa.me/5511947361263?text=Olá%21%20Vim%20pelo%20site%20da%20Bettel%20e%20gostaria%20de%20fazer%20uma%20encomenda.%20Poderia%20me%20ajudar%20com%20mais%20informações%3F">
