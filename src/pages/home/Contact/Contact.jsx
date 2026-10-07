@@ -9,7 +9,7 @@ function Contact() {
 
     function handleSendWhatsappMessage(){
         if(name === "" || device === "" || deviceWanted === "" || phoneState === ""){
-            alert("Complete todos os dados para enviar a mensagem");
+            alert("Complete todos os dados para iniciar avaliação");
         }else{
             const mensagem = `Olá! Vim pelo site da Bettel e gostaria de avaliar meu iPhone para usar como entrada.
 
