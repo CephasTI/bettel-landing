@@ -6,6 +6,7 @@ import Products from "./Products/Products";
 import Differential from "./Differential/Differential";
 import Feedback from "./Feedback/Feedback";
 import Faq from "./Faq/Faq";
+import Contact from "./Contact/Contact";
 
 function Home(){
     return(
@@ -18,6 +19,7 @@ function Home(){
             <Differential/>
             <Feedback/>
             <Faq/>
+            <Contact/>
 
             <Footer/>
         </div>

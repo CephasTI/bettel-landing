@@ -50,3 +50,21 @@ section{
      */
 }
 
+.icon-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px;
+
+    background: radial-gradient(
+        circle, 
+        rgba(0, 0, 0, 0) 15%, 
+        rgba(187, 184, 184, 0) 35%,
+        rgba(209, 206, 206, 0.144) 55%,
+        rgba(255, 254, 254, 0.39)100%);
+          
+    border: solid 1px rgba(255, 255, 255, 0.185);
+    border-radius: 100%;
+}
+
