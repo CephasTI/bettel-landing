@@ -226,7 +226,7 @@
 @media (max-width: 670px) {
 
     #faq{
-        min-height: 900px;  
+        /* min-height: 900px;  
         background:
         radial-gradient(
         ellipse 100% 70% at 50% 110%,
@@ -234,7 +234,7 @@
         #969393 2.5px,
         #050505 95%
         ),
-        #050505;
+        #050505; */
     }
     
     .faq-container{
