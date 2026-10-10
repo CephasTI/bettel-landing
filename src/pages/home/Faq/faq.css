@@ -1,14 +1,14 @@
 #faq{
     min-height: 900px;
     
-    background:
+    /* background:
     radial-gradient(
       ellipse 100% 70% at 50% 110%,
       #cac7c7bb 0%,
       #302f2f 50%,
       #050505 95%
     ),
-    #050505;
+    #050505; */
 
     overflow: hidden;
 }
