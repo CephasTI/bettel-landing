@@ -1,6 +1,8 @@
 import "./contact.css";
 import contactTradeCardImage from "../../../assets/img/contact-trade-card-image.png";
-import { useState, useEffect } from "react";
+import contactDirectCardImage from "../../../assets/img/contact-direct-card-image.png";
+import WhatsappWhiteImage from "../../../assets/whatsapp-white-icon.webp";
+import { useState } from "react";
 
 function Contact() {
     const [ name, setName ] = useState("");
@@ -45,8 +47,8 @@ function Contact() {
                             <div className="form-container">
 
                                 <div className="form-content">
-                                    <div className="form-header">
-                                        <div className="form-tag">
+                                    <div className="card-header">
+                                        <div className="card-tag">
                                             <div className="icon-tag">
                                                 <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#ffffff"><path d="M482-160q-134 0-228-93t-94-227v-7l-64 64-56-56 160-160 160 160-56 56-64-64v7q0 100 70.5 170T482-240q26 0 51-6t49-18l60 60q-38 22-78 33t-82 11Zm278-161L600-481l56-56 64 64v-7q0-100-70.5-170T478-720q-26 0-51 6t-49 18l-60-60q38-22 78-33t82-11q134 0 228 93t94 227v7l64-64 56 56-160 160Z"/></svg>
                                             </div>
@@ -56,7 +58,7 @@ function Contact() {
                                             </div>
                                         </div>
 
-                                        <div className="form-title">
+                                        <div className="card-title">
                                             <h1>Avalie seu iPhone</h1>
 
                                             <p>Descubra quanto seu iPhone pode valer <br />como entrada para o seu póximo.</p>
@@ -144,34 +146,41 @@ function Contact() {
                             </h4>
                         </div>
 
-                        {/* <div className="card direct">
-                            <div className="form-header">
-                                <div className="form-tag">
+                        <div className="card direct">
+                            <div className="form-container">
+                                <div className="form-content">
+                                    <div className="card-header">
+                                        <div className="card-tag">
+                                            <div className="icon-tag">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#ffffff"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg>
+                                            </div>
 
-                                    <div className="icon-tag">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#ffffff"><path d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+                                            <div className="eyebrow">
+                                                CONHEÇA NOSSOS PRODUTOS
+                                            </div>
+                                        </div>
+
+                                        <div className="card-title">
+                                            <h1>Ainda está procurando seu novo iPhone?</h1>
+
+                                            <p>Fale com nossa equipe e conheça os modelos disponíveis, condições e opções de pagamento.</p>
+                                        </div>
                                     </div>
 
-                                    <div className="eyebrow">
-                                        CONHEÇA NOSSOS PRODUTOS
+                                    <button>
+                                        <img src={WhatsappWhiteImage} alt="Whatsapp image"/>
+
+                                        Conhecer Produtos 
+                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ffffff"><path d="M630-444H192v-72h438L429-717l51-51 288 288-288 288-51-51 201-201Z"/></svg>
+                                    </button>
+
+                                    <div className="direct-image-card">
+                                        <img src={contactDirectCardImage} alt="" />
                                     </div>
-
                                 </div>
-
-                                <div className="form-title">
-                                    <h1>Já escolheu <br /> o seu?</h1>
-
-                                    <p>Descubra quanto seu iPhone pode valer como entrada para o seu póximo.</p>
-                                </div>
-                                
                             </div>
-                            
-
-                            <form>
-
-                            </form>
-
-                        </div> */}
+                        </div>
 
                     </div>
 

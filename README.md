@@ -18,8 +18,8 @@ The project is being developed with a focus on **responsive design, reusable Rea
 
 | Component | Progress |
 | --------- | -------: |
-| Header    |      80% |
-| Sidebar   |      85% |
+| Header    |      95% |
+| Sidebar   |      95% |
 | Footer    |      10% |
 | NotFound  |     100% |
 
@@ -32,18 +32,18 @@ The project is being developed with a focus on **responsive design, reusable Rea
 | Hero       |     100% |
 | About      |     100% |
 | Products   |       5% |
-| Difference |       5% |
+| Difference |      55% |
 | Feedback   |      95% |
-| FAQ        |      90% |
-| Contact    |       0% |
+| FAQ        |      95% |
+| Contact    |      95% |
 
 ### Responsiveness
 
 | Device  | Progress |
 | ------- | -------: |
-| Desktop |      65% |
-| Tablet  |      25% |
-| Mobile  |      60% |
+| Desktop |      95% |
+| Tablet  |      55% |
+| Mobile  |      70% |
 
 ---
 
