@@ -394,12 +394,12 @@
             height: 100%;
 
             .card-header{
-              height: 180px;
+              height: 140px;
               margin-bottom: 0;
             }
 
             .direct-image-card{
-              height: 180px;
+              height: 190px;
                 
               img{
                 transform: 
@@ -439,6 +439,10 @@
                 h1{
                   font-size: 24px;
                 }
+
+                p{
+                  font-size: 14px;
+                }
               }
             }
           }
@@ -451,6 +455,10 @@
 @media (max-width: 575px) {
   .contact-container{
     .contact-options{
+      .card{
+        padding: 18px 20px;
+      }
+
       .card.trade{
         .form-container{
           .form-content{
@@ -459,19 +467,11 @@
             height: 100%;
 
             form{
-              label{
-                margin-bottom: 2px;
-              }
-
-              input{
-                margin-bottom: 5px;
-              }
-
               .check-mark{
                 ol{
                   li{
-                    height: 60px;
-                    width: 75px;
+                    height: 65px;
+                    width: 85px;
 
                     padding: 2px;
 
@@ -528,19 +528,11 @@
             height: 100%;
 
             form{
-              label{
-                margin-bottom: 2px;
-              }
-
-              input{
-                margin-bottom: 5px;
-              }
-
               .check-mark{
                 ol{
                   li{
-                    height: 50px;
-                    width: 65px;
+                    height: 55px;
+                    width: 75px;
 
                     padding: 2px;
 
