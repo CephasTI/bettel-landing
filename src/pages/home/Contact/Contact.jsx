@@ -29,6 +29,14 @@ function Contact() {
 
     const [ phoneState, setPhoneState ] = useState("");
 
+    function handleKnowProducts() {
+        const message = `Olá! Vim pelo site da Bettel e estou procurando meu novo Apple. 
+Poderia me ajudar com mais informações?`;
+        
+        const encodedMessage = encodeURIComponent(message);
+        window.open(`https://api.whatsapp.com/send/?phone=5511947361263&text=${encodedMessage}`, "_blank")
+    }
+
     return(
         <section id="contact">
             <div className="container">
@@ -167,7 +175,7 @@ function Contact() {
                                         </div>
                                     </div>
 
-                                    <button>
+                                    <button onClick={handleKnowProducts}>
                                         <img src={WhatsappWhiteImage} alt="Whatsapp image"/>
 
                                         Conhecer Produtos 
